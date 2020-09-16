@@ -1,0 +1,11 @@
+Koriscenje MongoDB verzije 4.0.16.
+Klasicna instalacija i pokretanje servera kroz cmd (mongod) i klijenta (mongo).
+Pored ovog se nalazi jedan .txt fajl koji poseduje opise o osnovnim klasama aplikacije i pocetne podatke za bazu.
+Folder ComicClub sadrzi API za ovu aplikaciju, nuzno je da se pokrene.
+Folder comic-club sadrzi presotali deo aplikacije. Potrebno je da u tom folderu otvori cmd/terminal.
+Prvo se kuca "npm install" a nakon toga "npm isntall -g @ionic/cli" gde se pokrece projekat sa Ionice servera.
+Ako zelite da deinstalirate ionic to je naredba "npm uninstall -g ionic".
+Inace, pokrece se aplikacija na kojoj mozete da se registrujete kao novi korisnik i pristupite aplikaciji unosenjem svojih zahtevanih informacija.
+Postoji pristup svim stripovima u bazu i moguc je pregled istih. Svaki od njih moze da se doda u neku svoju listu stripova, nazovimo je voljeni/omiljeni.
+Svaki od korisnika moze da lajkuje neki strip gde je taj broj vidljiv svima. Postoji nacin search-a stripova i usera koji postoje preko dela imena.
+Svaki strip sluzi iskljucivo za citanje, tako da se skorluje misem sizmedju strana sleva udesno. Takodje svaki strip poseduje odsek za komentare korisnika.

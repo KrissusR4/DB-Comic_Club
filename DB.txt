@@ -1,0 +1,45 @@
+ComicClub!
+
+user:
+-_id (ObjectId)
+-nickname (string)
+-password (string)
+-picture (string)
+-comicIdList<ObjectId>
+
+comic
+-_id (ObjectId)
+-numberLikes (int)
+-name (string)
+-pagesList<string>
+
+comment:
+-_id (ObjectId)
+-idUserComm (string)
+-idComicComm (string)
+-commentText (string)
+
+
+InBase!
+
+use comicclub
+
+db.user.insert({"nickname":"Julija", "password":"jucili", "picture":"Female.jpg", "comicIdList":[]});
+db.user.insert({"nickname":"Kristijan", "password":"kris", "picture":"Male.jpg", "comicIdList":[]});
+db.user.insert({"nickname":"Milos", "password":"miske", "picture":"Male.jpg", "comicIdList":[]});
+db.user.insert({"nickname":"Profa", "password":"ocena", "picture":"Male.jpg", "comicIdList":[]});
+
+db.comic.insert({"numberLikes":0, "name":"Batman", "pagesList":["Batman1.jpg", "Batman2.jpg", "Batman3.jpg", "Batman4.jpg", "Batman5.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Spiderman", "pagesList":["Spiderman1.jpg", "Spiderman2.jpg", "Spiderman3.jpg", "Spiderman4.jpg", "Spiderman5.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Hawkeye", "pagesList":["Hawkeye1.jpg", "Hawkeye2.jpg", "Hawkeye3.jpg", "Hawkeye4.jpg", "Hawkeye5.jpg", "Hawkeye6.jpg", "Hawkeye7.jpg", "Hawkeye8.jpg", "Hawkeye9.jpg", "Hawkeye10.jpg", "Hawkeye11.jpg", "Hawkeye12.jpg", "Hawkeye13.jpg", "Hawkeye14.jpg", "Hawkeye15.jpg", "Hawkeye16.jpg", "Hawkeye17.jpg", "Hawkeye18.jpg", "Hawkeye19.jpg", "Hawkeye20.jpg", "Hawkeye21.jpg", "Hawkeye22.jpg", "Hawkeye23.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Hawkman", "pagesList":["Hawkman1.jpg", "Hawkman2.jpg", "Hawkman3.jpg", "Hawkman4.jpg", "Hawkman5.jpg", "Hawkman6.jpg", "Hawkman7.jpg", "Hawkman8.jpg", "Hawkman9.jpg", "Hawkman10.jpg", "Hawkman11.jpg", "Hawkman12.jpg", "Hawkman13.jpg", "Hawkman14.jpg", "Hawkman15.jpg", "Hawkman16.jpg", "Hawkman17.jpg", "Hawkman18.jpg", "Hawkman19.jpg", "Hawkman20.jpg", "Hawkman21.jpg", "Hawkman22.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Marvel's Spider-Man - The Black Cat Strikes", "pagesList":["Marvel's Spider-Man - The Black Cat Strikes1.jpg", "Marvel's Spider-Man - The Black Cat Strikes2.jpg", "Marvel's Spider-Man - The Black Cat Strikes3.jpg", "Marvel's Spider-Man - The Black Cat Strikes4.jpg", "Marvel's Spider-Man - The Black Cat Strikes5.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Thor", "pagesList":["Thor1.jpg", "Thor2.jpg", "Thor3.jpg", "Thor4.jpg", "Thor5.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Symbiote Spider-Man - Alien Reality", "pagesList":["Symbiote Spider-Man - Alien Reality1.jpg", "Symbiote Spider-Man - Alien Reality2.jpg", "Symbiote Spider-Man - Alien Reality3.jpg", "Symbiote Spider-Man - Alien Reality4.jpg", "Symbiote Spider-Man - Alien Reality5.jpg", "Symbiote Spider-Man - Alien Reality6.jpg", "Symbiote Spider-Man - Alien Reality7.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"The Flash", "pagesList":["The Flash1.jpg", "The Flash2.jpg", "The Flash3.jpg", "The Flash4.jpg", "The Flash5.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Venom Zone Empire", "pagesList":["Venom Zone Empire1.jpg", "Venom Zone Empire2.jpg", "Venom Zone Empire3.jpg", "Venom Zone Empire4.jpg", "Venom Zone Empire5.jpg"]});
+db.comic.insert({"numberLikes":0, "name":"Wonder Woman Digital Empire", "pagesList":["Wonder Woman Digital Empire1.jpg", "Wonder Woman Digital Empire2.jpg", "Wonder Woman Digital Empire3.jpg", "Wonder Woman Digital Empire4.jpg", "Wonder Woman Digital Empire5.jpg"]});
+
+
+//more creation in app of users and comments!
+
